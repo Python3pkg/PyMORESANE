@@ -11,7 +11,7 @@ try:
     from pycuda.compiler import SourceModule
 except ImportError:
     traceback.print_exc()
-    print "Pycuda unavailable - GPU mode will fail."
+    print("Pycuda unavailable - GPU mode will fail.")
 
 
 def iuwt_decomposition(in1, scale_count, scale_adjust=0, mode='ser', core_count=2, store_smoothed=False,

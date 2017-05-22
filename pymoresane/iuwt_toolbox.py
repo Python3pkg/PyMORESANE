@@ -10,7 +10,7 @@ try:
     from pycuda.compiler import SourceModule
 except:
     traceback.print_exc()
-    print "Pycuda unavailable - GPU mode will fail."
+    print("Pycuda unavailable - GPU mode will fail.")
 
 import pylab as plt
 

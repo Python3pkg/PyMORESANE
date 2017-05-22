@@ -12,7 +12,7 @@ try:
     from scikits.cuda.fft import ifft
 except:
     traceback.print_exc()
-    print "Pycuda unavailable - GPU mode will fail."
+    print("Pycuda unavailable - GPU mode will fail.")
 
 
 def fft_convolve(in1, in2, conv_device="cpu", conv_mode="linear", store_on_gpu=False):
